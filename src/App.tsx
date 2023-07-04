@@ -1,11 +1,12 @@
 import Layout from "./Layout";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <Layout>
       <Header />
-      <h1 className="text-3xl">Initial setup</h1>
+      <Hero />
     </Layout>
   );
 }

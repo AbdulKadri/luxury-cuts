@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import Button from "./Button";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +11,11 @@ const Header = () => {
   };
 
   return (
-    <div className="flex items-center justify-between py-5 px-8 font-bold text-white bg-black border-b-2 border-b-primary h-[5rem] shadow-xl">
+    <header className="flex items-center justify-between py-5 px-8 font-bold text-white bg-black border-b-2 border-b-primary h-[5rem] shadow-xl">
       <div>
         <a href="/" className="flex gap-2 items-center">
           <img
-            src="src\assets\Luxury-Cuts-Logo.svg"
+            src="=../../Luxury-Cuts-Logo.svg"
             alt="Logo"
             //   className="h-[2rem]"
           />
@@ -47,12 +48,10 @@ const Header = () => {
         <li>Products</li>
         <li>Contact</li>
         <li>
-          <button className="bg-primary p-2 border border-white">
-            Book Now
-          </button>
+          <Button colorClass="bg-primary" />
         </li>
       </ul>
-    </div>
+    </header>
   );
 };
 
