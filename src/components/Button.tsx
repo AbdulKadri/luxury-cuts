@@ -1,12 +1,10 @@
-const Button = ({
-  text = "Book Now",
-  colorClass,
-}: {
-  text?: string;
-  colorClass?: string;
-}) => {
+const Button = ({ text = "Book Now" }: { text?: string }) => {
   return (
-    <button className={`p-2 border border-white ${colorClass}`}>{text}</button>
+    <button
+      className={`py-1 px-2 border border-white bg-secondary hover:bg-primary hover:text-yellow-200 hover:border-yellow-200`}
+    >
+      {text}
+    </button>
   );
 };
 

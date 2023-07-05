@@ -11,15 +11,15 @@ const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between py-5 px-8 font-bold text-white bg-black border-b-2 border-b-primary h-[5rem] shadow-xl">
+    <header className="flex items-center justify-between py-2 px-8 font-bold text-white bg-black border-b-2 border-b-primary shadow-xl">
       <div>
         <a href="/" className="flex gap-2 items-center">
           <img
             src="=../../Luxury-Cuts-Logo.svg"
             alt="Logo"
-            //   className="h-[2rem]"
+            className="h-[2rem] md:h-[1.5rem]"
           />
-          <p className="text-2xl">Luxury Cuts</p>
+          <p className="text-lg md:text-md">Luxury Cuts</p>
         </a>
       </div>
       <div className="md:hidden">
@@ -27,28 +27,26 @@ const Header = () => {
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} size="2xl" />
         </button>
         {isOpen && (
-          <div className="absolute top-8 right-0 mt-12 bg-black w-full shadow-lg z-10">
+          <div className="absolute top-1 right-0 mt-12 bg-black w-full shadow-lg z-10">
             <ul className="flex flex-col items-center gap-6 p-4 text-xl">
               <li>Home</li>
               <li>Services</li>
               <li>Products</li>
               <li>Contact</li>
               <li>
-                <button className="bg-primary p-2 border border-white">
-                  Book Now
-                </button>
+                <Button />
               </li>
             </ul>
           </div>
         )}
       </div>
-      <ul className="hidden md:flex gap-6 items-center">
+      <ul className="hidden md:flex gap-6 items-center text-[.6rem]">
         <li>Home</li>
         <li>Services</li>
         <li>Products</li>
         <li>Contact</li>
         <li>
-          <Button colorClass="bg-primary" />
+          <Button />
         </li>
       </ul>
     </header>
