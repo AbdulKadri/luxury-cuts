@@ -17,9 +17,9 @@ const Header = () => {
           <img
             src="=../../Luxury-Cuts-Logo.svg"
             alt="Logo"
-            className="h-[2rem] md:h-[1.5rem]"
+            className="h-[2rem] lg:h-[3rem]"
           />
-          <p className="text-lg md:text-md">Luxury Cuts</p>
+          <p className="text-lg lg:text-2xl">Luxury Cuts</p>
         </a>
       </div>
       <div className="md:hidden">
@@ -40,7 +40,7 @@ const Header = () => {
           </div>
         )}
       </div>
-      <ul className="hidden md:flex gap-6 items-center text-[.6rem]">
+      <ul className="hidden md:flex gap-6 items-center text-[1rem]">
         <li>Home</li>
         <li>Services</li>
         <li>Products</li>
