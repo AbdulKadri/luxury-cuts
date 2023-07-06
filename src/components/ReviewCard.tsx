@@ -3,7 +3,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const ReviewCard = () => {
   return (
-    <div className="relative bg-gray-500 my-5 p-5 rounded w-min-content">
+    <div className="relative bg-gray-500 my-5 p-5 rounded w-3/4 md:w-[23rem]">
       <h4 className="font-bold">Jack Crown</h4>
       <p className="text-gray-100 text-xs">2022-04-11</p>
       <div className="absolute top-5 right-5 w-[2.5rem] md:w-[3rem]">

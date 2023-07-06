@@ -6,15 +6,15 @@ import Button from "./Button";
 
 const Products = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-5 md:pt-5 pb-3 bg-gray-200 text-black">
-      <h3 className="text-[2rem]">Products</h3>
-      <p className="md:hidden text-[0.7rem] text-center mx-[3rem] lg:mx-[6rem] pb-5 mb-5 border-b-[1px] border-black">
+    <div className="flex flex-col justify-center items-center pt-1 md:pt-1 pb-3 bg-bgprimary text-tprimary">
+      <h3 className="text-[3rem] text-primary">Products</h3>
+      <p className="md:hidden text-[0.8rem] md:text-[0.9rem] text-center mx-[2rem] lg:mx-[6rem]">
         Explore our curated selection of premium hair and beard care products at
         our Barbershop. We handpick the finest products from reputable brands to
         help you maintain your look with ease. Experience the difference of
         quality grooming essentials right at your fingertips.
       </p>
-      <p className="hidden md:block text-[.9rem] text-center mx-[3rem] lg:mx-[6rem] pb-5 mb-5 border-b-[1px] border-black">
+      <p className="hidden md:block text-[0.9rem] text-center mx-[3rem] lg:mx-[6rem]">
         Welcome to the products section of our Barbershop. Here, we've carefully
         curated an impressive range of top-tier hair and beard care essentials,
         sourced from the most trusted brands in the industry. Our selection is
@@ -31,7 +31,7 @@ const Products = () => {
         an unparalleled grooming experience. Explore our selection and find your
         next grooming staple today.
       </p>
-
+      <hr className="w-[90%] my-5 border-primary" />
       <div className="flex flex-col md:flex-row md:justify-around gap-4 w-full md:gap-0">
         <ProductCard
           price="$45 - Shampoo, Conditioner & Body Wash"

@@ -7,12 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#36213E',
-        'secondary': '#554971 ',
-        'background-primary': '#FFFFFF',
-        'background-secondary': '#554971',
-        'text-primary': '#000000',
-        'text-secondary': '#FFFFFF',
+        'primary': '#79AEA3',
+        'secondary': '#1b1b1b',
+        'bgheader': '#000000',
+        'bgprimary': '#FFFFFF',
+        'bgsecondary': '#3C3C3C',
+        'tprimary': '#000000',
+        'tsecondary': '#FFFFFF',
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],

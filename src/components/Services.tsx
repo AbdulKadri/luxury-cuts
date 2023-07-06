@@ -6,16 +6,16 @@ import Button from "./Button";
 
 const Services = () => {
   return (
-    <div className="flex flex-col justify-center items-center py-5 bg-white text-black">
-      <h3 className="text-[2rem]">Services</h3>
-      <p className="md:hidden text-[0.7rem] text-center mx-[3rem] lg:mx-[6rem]">
+    <div className="flex flex-col justify-center items-center text-tprimary pb-[3rem] md:pb-4">
+      <h3 className="text-[3rem] text-primary">Services</h3>
+      <p className="md:hidden text-[0.8rem] md:text-[0.9rem] text-center mx-[2rem] lg:mx-[6rem]">
         Welcome to our Barbershop, where we merge classic styling with modern
         trends to redefine your look. Experience exceptional haircuts, detailed
         beard trimming, and premium grooming treatments from our highly skilled
         barbers. We promise a superior and comfortable grooming experience every
         time you visit.
       </p>
-      <p className="hidden md:block text-[0.7rem] text-center mx-[3rem] lg:mx-[6rem]">
+      <p className="hidden md:block md:text-[0.9rem] text-center mx-[3rem] lg:mx-[6rem]">
         Step into our Barbershop and immerse yourself in a unique blend of
         tradition and contemporary style. We're not just a barbershop; we're a
         destination for those seeking an unparalleled grooming experience. Our
@@ -34,8 +34,8 @@ const Services = () => {
         perfect look that reflects your personality and lifestyle. Your journey
         towards a great style begins here at our Barbershop!
       </p>
-      <hr className="w-5/6 my-5" />
-      <div className="grid grid-cols-2 md:grid-cols-3 md:place-items-center gap-[1rem] w-full px-4">
+      <hr className="w-[90%] my-5 border-primary" />
+      <div className="grid grid-cols-2 md:grid-cols-3 md:place-items-center gap-4 md:gap-0 w-full px-4">
         <ServiceCard
           title="Classic Cuts"
           text="Experience precision cuts, tailored to enhance your look and suit your lifestyle."
@@ -51,7 +51,7 @@ const Services = () => {
           text="Indulge in our comprehensive grooming package for a complete style transformation."
           image={barber}
         />
-        <div className="md:col-span-3 place-self-center text-center w-3/4">
+        <div className="md:col-span-3 place-self-center text-center w-3/4 mt-4">
           <p className="text-md mb-4">
             View all our services and what we offer below
           </p>

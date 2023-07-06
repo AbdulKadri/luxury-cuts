@@ -14,11 +14,11 @@ function App() {
       <Header />
       <Hero />
       <Services />
-      <Products />
-      <div className="hidden md:flex h-[50vh] w-full">
-        <img src={haircutImage} alt="" className="w-1/2" />
-        <img src={haircutImage2} alt="" className="w-1/2" />
+      <div className="flex h-[50vh] w-full">
+        <img src={haircutImage} alt="" className="w-full md:w-1/2" />
+        <img src={haircutImage2} alt="" className="hidden md:block w-1/2" />
       </div>
+      <Products />
       <Reviews />
       <Footer />
     </Layout>

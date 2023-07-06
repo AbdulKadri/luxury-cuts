@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="flex justify-around bg-gradient-to-r from-white to-primary py-3 px-6">
+    <div className="flex justify-around bg-bgheader text-tsecondary py-3 px-6">
       <div className="flex items-center gap-2">
         <img src="./Luxury-Cuts-Logo.svg" alt="Luxury Cuts Logo" />
         <h2 className="font-bold text-2xl">

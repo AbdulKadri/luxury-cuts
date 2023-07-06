@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between py-2 px-8 font-bold text-white bg-black border-b-2 border-b-primary shadow-xl">
+    <header className="flex items-center justify-between py-2 px-8 font-bold text-tsecondary bg-bgheader border-b-2 border-b-primary shadow-xl">
       <div>
         <a href="/" className="flex gap-2 items-center">
           <img
@@ -28,7 +28,7 @@ const Header = () => {
         </button>
         {isOpen && (
           <div className="absolute top-1 right-0 mt-12 bg-black w-full shadow-lg z-10">
-            <ul className="flex flex-col items-center gap-6 p-4 text-xl">
+            <ul className="flex flex-col items-center gap-4 p-4 text-xl">
               <li>Home</li>
               <li>Services</li>
               <li>Products</li>
