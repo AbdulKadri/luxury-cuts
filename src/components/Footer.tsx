@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -40,36 +41,49 @@ const Footer = () => {
             <h4 className="font-semibold text-lg text-primary">Menu</h4>
             <ul className="space-y-1 text-sm">
               <li>
-                <FontAwesomeIcon icon={faHome} className="mr-1 text-primary" />
-                Home
+                <Link to="/">
+                  <FontAwesomeIcon
+                    icon={faHome}
+                    className="mr-1 text-primary"
+                  />
+                  Home
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon
-                  icon={faBellConcierge}
-                  className="mr-1 text-primary"
-                />
-                Services
+                <Link to="/services">
+                  <FontAwesomeIcon
+                    icon={faBellConcierge}
+                    className="mr-1 text-primary"
+                  />
+                  Services
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon
-                  icon={faProductHunt}
-                  className="mr-1 text-primary"
-                />
-                Products
+                <Link to="/products">
+                  <FontAwesomeIcon
+                    icon={faProductHunt}
+                    className="mr-1 text-primary"
+                  />
+                  Products
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon
-                  icon={faAddressBook}
-                  className="mr-1 text-primary"
-                />
-                Contact
+                <Link to="/contact">
+                  <FontAwesomeIcon
+                    icon={faAddressBook}
+                    className="mr-1 text-primary"
+                  />
+                  Contact
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon
-                  icon={faArrowRightFromBracket}
-                  className="mr-1 text-primary"
-                />
-                Book Now
+                <Link to="/booking">
+                  <FontAwesomeIcon
+                    icon={faArrowRightFromBracket}
+                    className="mr-1 text-primary"
+                  />
+                  Book Now
+                </Link>
               </li>
             </ul>
           </div>
@@ -104,32 +118,40 @@ const Footer = () => {
             <h4 className="font-semibold text-lg text-primary">Social's</h4>
             <ul className="space-y-1 text-sm">
               <li>
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  className="mr-1 text-primary"
-                />{" "}
-                Facebook
+                <Link to="/">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    className="mr-1 text-primary"
+                  />{" "}
+                  Facebook
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  className="mr-1 text-primary"
-                />{" "}
-                Instagram
+                <Link to="/">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="mr-1 text-primary"
+                  />{" "}
+                  Instagram
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon
-                  icon={faTwitter}
-                  className="mr-1 text-primary"
-                />{" "}
-                Twitter
+                <Link to="/">
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    className="mr-1 text-primary"
+                  />{" "}
+                  Twitter
+                </Link>
               </li>
               <li>
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  className="mr-1 text-primary"
-                />{" "}
-                LinkedIn
+                <Link to="/">
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="mr-1 text-primary"
+                  />{" "}
+                  LinkedIn
+                </Link>
               </li>
             </ul>
           </div>
