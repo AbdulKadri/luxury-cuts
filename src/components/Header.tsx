@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
 const Header = () => {
@@ -29,24 +30,40 @@ const Header = () => {
         {isOpen && (
           <div className="absolute top-1 right-0 mt-12 bg-black w-full shadow-lg z-10">
             <ul className="flex flex-col items-center gap-4 p-4 text-xl">
-              <li>Home</li>
-              <li>Services</li>
-              <li>Products</li>
-              <li>Contact</li>
+              <li className="hover:text-primary">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="hover:text-primary">
+                <Link to="/services">Services</Link>
+              </li>
+              <li className="hover:text-primary">
+                <Link to="/products">Products</Link>
+              </li>
+              <li className="hover:text-primary">
+                <Link to="/contact">Contact</Link>
+              </li>
               <li>
-                <Button />
+                <Button link="/booking" />
               </li>
             </ul>
           </div>
         )}
       </div>
       <ul className="hidden md:flex gap-6 items-center text-[1rem]">
-        <li>Home</li>
-        <li>Services</li>
-        <li>Products</li>
-        <li>Contact</li>
+        <li className="hover:text-primary">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="hover:text-primary">
+          <Link to="/services">Services</Link>
+        </li>
+        <li className="hover:text-primary">
+          <Link to="/products">Products</Link>
+        </li>
+        <li className="hover:text-primary">
+          <Link to="/contact">Contact</Link>
+        </li>
         <li>
-          <Button />
+          <Button link="/booking" />
         </li>
       </ul>
     </header>
