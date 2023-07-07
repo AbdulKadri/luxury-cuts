@@ -15,7 +15,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <Button />
+        <Button link="/booking" />
       </div>
     </div>
   );
