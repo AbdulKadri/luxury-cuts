@@ -1,9 +1,15 @@
-const ProductCard = ({ price, image }: { price: string; image: string }) => {
+const ProductCard = ({
+  price,
+  image,
+  classes,
+}: {
+  price: string;
+  image: string;
+  classes?: string;
+}) => {
   return (
     <div className="flex flex-col justify-center items-center gap-2 h-full w-full">
-      <p className="text-center w-5/6 font-semibold overflow-hidden overflow-ellipsis whitespace-nowrap">
-        {price}
-      </p>
+      <p className={`text-center font-semibold ${classes}`}>{price}</p>
       <img
         src={image}
         alt="Product Image"

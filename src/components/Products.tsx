@@ -36,9 +36,18 @@ const Products = () => {
         <ProductCard
           price="$45 - Shampoo, Conditioner & Body Wash"
           image={scw}
+          classes="overflow-hidden overflow-ellipsis whitespace-nowrap"
         />
-        <ProductCard price="$15 - Beard Oil" image={beardOil} />
-        <ProductCard price="$20 - Hair Clay & Pomade" image={clayPomade} />
+        <ProductCard
+          price="$15 - Beard Oil"
+          image={beardOil}
+          classes="overflow-hidden overflow-ellipsis whitespace-nowrap"
+        />
+        <ProductCard
+          price="$20 - Hair Clay & Pomade"
+          image={clayPomade}
+          classes="overflow-hidden overflow-ellipsis whitespace-nowrap"
+        />
       </div>
       <div className="mt-6 mb-3 text-white">
         <Button text="See All Products" />
