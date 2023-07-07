@@ -59,7 +59,7 @@ const Services = () => {
             View all our services and what we offer below
           </p>
           <div className="text-white">
-            <Button text="See All Services" />
+            <Button text="See All Services" link="/services" />
           </div>
         </div>
       </div>
