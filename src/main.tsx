@@ -8,28 +8,49 @@ import ProductsPage from "./pages/ProductsPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
 import BookingPage from "./pages/BookingPage.tsx";
 import ErrorPage from "./pages/ErrorPage.tsx";
+import Layout from "./Layout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <Layout>
+        <App />
+      </Layout>
+    ),
     errorElement: <ErrorPage />,
   },
   {
     path: "/services",
-    element: <ServicesPage />,
+    element: (
+      <Layout>
+        <ServicesPage />
+      </Layout>
+    ),
   },
   {
     path: "/products",
-    element: <ProductsPage />,
+    element: (
+      <Layout>
+        <ProductsPage />
+      </Layout>
+    ),
   },
   {
     path: "/contact",
-    element: <ContactPage />,
+    element: (
+      <Layout>
+        <ContactPage />
+      </Layout>
+    ),
   },
   {
     path: "/booking",
-    element: <BookingPage />,
+    element: (
+      <Layout>
+        <BookingPage />
+      </Layout>
+    ),
   },
 ]);
 
