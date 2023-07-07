@@ -14,14 +14,14 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between py-2 px-8 font-bold text-tsecondary bg-bgheader border-b-2 border-b-primary shadow-xl">
       <div>
-        <a href="/" className="flex gap-2 items-center">
+        <Link to="/" className="flex gap-2 items-center">
           <img
             src="=../../Luxury-Cuts-Logo.svg"
             alt="Logo"
             className="h-[2rem] lg:h-[3rem]"
           />
           <p className="text-lg lg:text-2xl">Luxury Cuts</p>
-        </a>
+        </Link>
       </div>
       <div className="md:hidden">
         <button onClick={toggleMenu}>

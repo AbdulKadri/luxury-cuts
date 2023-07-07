@@ -6,6 +6,7 @@ import App from "./App.tsx";
 import ServicesPage from "./pages/ServicesPage.tsx";
 import ProductsPage from "./pages/ProductsPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
+import BookingPage from "./pages/BookingPage.tsx";
 import ErrorPage from "./pages/ErrorPage.tsx";
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactPage />,
+  },
+  {
+    path: "/booking",
+    element: <BookingPage />,
   },
 ]);
 
