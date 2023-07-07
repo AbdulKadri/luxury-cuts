@@ -50,7 +50,7 @@ const Products = () => {
         />
       </div>
       <div className="mt-6 mb-3 text-white">
-        <Button text="See All Products" />
+        <Button text="See All Products" link="/products" />
       </div>
     </div>
   );
