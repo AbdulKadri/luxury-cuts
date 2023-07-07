@@ -40,16 +40,19 @@ const Services = () => {
           title="Classic Cuts"
           text="Experience precision cuts, tailored to enhance your look and suit your lifestyle."
           image={scissors}
+          classes="md:w-3/4"
         />
         <ServiceCard
           title="Beard & Mustache Trimming"
           text="Achieve a polished look with our expert beard and mustache trimming services."
           image={trimmer}
+          classes="md:w-3/4"
         />
         <ServiceCard
           title="Deluxe Grooming Package"
           text="Indulge in our comprehensive grooming package for a complete style transformation."
           image={barber}
+          classes="md:w-3/4"
         />
         <div className="md:col-span-3 place-self-center text-center w-3/4 mt-4">
           <p className="text-md mb-4">

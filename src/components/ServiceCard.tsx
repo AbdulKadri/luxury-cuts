@@ -2,13 +2,17 @@ const ServiceCard = ({
   title,
   text,
   image,
+  classes,
 }: {
   title: string;
   text: string;
-  image: string;
+  image?: string;
+  classes?: string;
 }) => {
   return (
-    <div className="flex flex-col md:w-1/2 h-full justify-around items-center gap-4 p-4 text-center bg-primary text-white">
+    <div
+      className={`flex flex-col h-full justify-around items-center gap-4 p-4 text-center bg-primary text-white ${classes}`}
+    >
       <h4 className="text-md font-medium">{title}</h4>
       <div>
         <img src={image} alt="" className="w-full h-full" />
