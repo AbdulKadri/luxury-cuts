@@ -28,7 +28,7 @@ const Header = () => {
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} size="2xl" />
         </button>
         {isOpen && (
-          <div className="absolute top-1 right-0 mt-12 bg-black w-full shadow-lg z-10">
+          <div className="absolute top-0.5 right-0 mt-12 bg-black w-full shadow-lg z-10">
             <ul className="flex flex-col items-center gap-4 p-4 text-xl">
               <li className="hover:text-primary">
                 <Link to="/">Home</Link>
