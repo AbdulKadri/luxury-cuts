@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const Button = ({
   text = "Book Now",
-  link,
+  link = "/",
 }: {
   text?: string;
   link?: string;
@@ -9,7 +11,7 @@ const Button = ({
     <button
       className={`py-1 px-2 border border-white bg-primary hover:bg-green-700  font-semibold`}
     >
-      <a href={link}>{text}</a>
+      <Link to={link}>{text}</Link>
     </button>
   );
 };
