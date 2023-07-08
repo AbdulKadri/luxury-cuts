@@ -4,7 +4,7 @@ import barber from "../assets/service-icons/barber.svg";
 import trimmer from "../assets/service-icons/trimmer.svg";
 import Button from "../components/Button";
 
-const servicesPage = () => {
+const ServicesPage = () => {
   return (
     <div className="flex flex-col gap-3 w-3/4 mx-auto py-5">
       <h2 className="text-[2rem] font-bold">All Services</h2>
@@ -89,4 +89,4 @@ const servicesPage = () => {
   );
 };
 
-export default servicesPage;
+export default ServicesPage;

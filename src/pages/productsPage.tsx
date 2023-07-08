@@ -3,7 +3,7 @@ import scw from "../assets/product-images/shampoo-conditioner-bodywash.jpg";
 import beardOil from "../assets/product-images/beard-oil.jpg";
 import clayPomade from "../assets/product-images/clay-pomade.jpg";
 
-const productsPage = () => {
+const ProductsPage = () => {
   return (
     <div className="flex flex-col gap-3 w-3/4 mx-auto py-5">
       <div>
@@ -76,4 +76,4 @@ const productsPage = () => {
   );
 };
 
-export default productsPage;
+export default ProductsPage;
