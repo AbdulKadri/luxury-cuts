@@ -8,6 +8,7 @@ import ProductsPage from "./pages/ProductsPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
 import BookingPage from "./pages/BookingPage.tsx";
 import ErrorPage from "./pages/ErrorPage.tsx";
+import ThankYouPage from "./pages/ThankYouPage.tsx";
 import Layout from "./Layout";
 
 const router = createBrowserRouter([
@@ -49,6 +50,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <BookingPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/thankyou",
+    element: (
+      <Layout>
+        <ThankYouPage />
       </Layout>
     ),
   },
