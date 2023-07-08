@@ -64,7 +64,7 @@ const ProductsPage = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-6 items-center w-3/4 pb-3">
           <ProductCard price="$20 - Hair Clay & Pomade" image={clayPomade} />
-          <p className="text-sm md:text-base">
+          <p className="text-sm md:text-base bg-primary text-white p-5 rounded">
             Our hair clay and pomade provide a strong hold with a matte finish.
             They are perfect for achieving a variety of hairstyles while
             maintaining the hair's flexibility. Enriched with natural
