@@ -8,10 +8,10 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="font-poppins">
+    <div className="font-poppins flex flex-col min-h-screen">
       <ScrollToTop />
       <Header />
-      {children}
+      <div className="flex-grow">{children}</div>
       <Footer />
     </div>
   );
