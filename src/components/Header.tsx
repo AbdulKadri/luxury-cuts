@@ -31,18 +31,26 @@ const Header = () => {
           <div className="absolute top-0.5 right-0 mt-12 bg-black w-full shadow-lg z-10">
             <ul className="flex flex-col items-center gap-4 p-4 text-xl">
               <li className="hover:text-primary">
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={toggleMenu}>
+                  Home
+                </Link>
               </li>
               <li className="hover:text-primary">
-                <Link to="/services">Services</Link>
+                <Link to="/services" onClick={toggleMenu}>
+                  Services
+                </Link>
               </li>
               <li className="hover:text-primary">
-                <Link to="/products">Products</Link>
+                <Link to="/products" onClick={toggleMenu}>
+                  Products
+                </Link>
               </li>
               <li className="hover:text-primary">
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" onClick={toggleMenu}>
+                  Contact
+                </Link>
               </li>
-              <li>
+              <li onClick={toggleMenu}>
                 <Button link="/booking" />
               </li>
             </ul>
