@@ -13,7 +13,7 @@ const ProductCard = ({
       <img
         src={image}
         alt="Product Image"
-        className="w-[20rem] h-[20rem] object-cover"
+        className="w-[20rem] h-[20rem] object-auto object-center"
       />
     </div>
   );
